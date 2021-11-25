@@ -1,78 +1,49 @@
 body {
   background-image: url(./images/musicalNotes.jpg);
 }
+
+.text{
+  background-color: #E5E8D3;
+  text-align: center;
+  font-family: 'Comforter', cursive;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 50px;
+  color: #1E1B50;
+}
 .container {
   width: 640px;
-  height: 100px;
+  height: auto;
+  margin-top: 0px;
+}
+#front-cover{
+  margin: 0 127%;
 }
 .controls {
   background-color: #d9dade;
-  margin-top: 39%;
   margin-left: 100%;
   width: 100%;
   height: 100px;
   text-align: center;
+  padding-bottom: 15px;
 }
 .btn {
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin: 0 0.8em;
+  border: 0;
+  box-shadow: 2px 2px 0 1px black;
   position: relative;
-  width: 80px;
-  padding: 15px;
+  width: 70px;
+  padding: 7px;
   top: 100%;
   transform: translateY(-100%);
-  cursor: pointer;
 }
-
-@media (max-width: 375px) {
-  body {
-    background-image: url(./images/musicalNotes.jpg);
-    background-repeat: no-repeat;
-  }
-  img {
-    width: 30px;
-    height: 40px;
-  }
-  .container {
-    width: 240px;
-    height: 100px;
-  }
-  .controls {
-    background-color: #d9dade;
-    margin-left: 25%;
-    margin-top: 39%;
-
-    text-align: center;
-  }
-  .btn {
-    width: 30px;
-    position: relative;
-    padding: 7px;
-    top: 100%;
-    cursor: pointer;
-  }
+.btn:active {
+  box-shadow: 0 0 0 0 black, inset 0.9px 0.9px 0.9px 1px black;
 }
+.contacts{
+  width: 90px;
+ 
+  padding: 40px 15px;
 
-@media (max-width: 1629px) {
-  body {
-    background-image: url(./images/musicalNotes.jpg);
-    background-repeat: auto;
-  }
-  .container {
-    width: 640px;
-    height: 100px;
-  }
-  .controls {
-    background-color: #d9dade;
-    margin-left: 80%;
-    margin-top: 39%;
-
-    text-align: center;
-  }
-  .btn {
-    position: relative;
-    width: 80px;
-    padding: 15px;
-    top: 100%;
-    transform: translateY(-100%);
-    cursor: pointer;
-  }
 }
